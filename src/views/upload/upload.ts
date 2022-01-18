@@ -29,12 +29,10 @@ const handleFileChange = (e) => {
   file.value = files;
 };
 
-const uploadFile = async() => {
-  console.log(123);
-  
+const uploadFile = async () => {
   if (!(await isImage(file.value))) {
-    alert('图片格式不正确！')
-    return
+    alert('图片格式不正确！');
+    return;
   }
 };
 
